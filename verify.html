@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;padding-top:60px">
+
+<h3>Enter Verification Code</h3>
+
+<input id="code" placeholder="Enter Code"><br><br>
+<button onclick="check()">Verify</button>
+
+<p id="msg"></p>
+
+<script>
+function check(){
+ if(document.getElementById("code").value=="ABC123"){
+   document.getElementById("msg").innerHTML="✅ Verification Successful!";
+ } else {
+   document.getElementById("msg").innerHTML="❌ Invalid Code";
+ }
+}
+</script>
+
+</body>
+</html>
