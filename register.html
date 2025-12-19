@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Create Account</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px 20px;
+        background: #f0f2f5;
+    }
+    h2 {
+        margin-bottom: 30px;
+        color: #333;
+    }
+    input {
+        width: 80%;
+        max-width: 300px;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    button {
+        padding: 15px 40px;
+        font-size: 18px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #218838;
+    }
+</style>
 </head>
-<body style="text-align:center;padding-top:60px;font-family:Arial">
+<body>
 
-<h2>Create Your Account</h2>
-<p>Fill in the details to continue</p>
+<h2>Create Account</h2>
 
 <form action="adpage.html">
-  <input type="text" placeholder="Full Name" required><br><br>
-  <input type="email" placeholder="Email Address" required><br><br>
-  <input type="password" placeholder="Password" required><br><br>
-
-  <button style="padding:12px 30px;font-size:16px">
-    Create Now
-  </button>
+    <input type="text" placeholder="Full Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Create Now</button>
 </form>
 
 </body>
