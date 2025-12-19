@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Granted</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 60px 20px;
+        background: #e9f7ef;
+    }
+    h1 {
+        color: #28a745;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    button {
+        padding: 15px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    #homeButton {
+        background: #007bff;
+        color: white;
+    }
+    #homeButton:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<h1>✅ Verification Successful!</h1>
+<p>Welcome! You will be redirected to the offer in a few seconds.</p>
+
+<!-- Home Button -->
+<a href="index.html"><button id="homeButton">Go to Home</button></a>
+
+<script>
+    // Auto-redirect to AdsTerra after 3 seconds
+    setTimeout(function(){
+        window.location.href = "https://www.effectivegatecpm.com/v7781wxp3?key=1d0265c7905154540920873608b07e8c";
+    }, 3000);
+</script>
+
+</body>
+</html>
