@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html>
-<body style="text-align:center;padding-top:60px">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px 20px;
+        background: #f8f9fa;
+    }
+    h3 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+    input {
+        width: 80%;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 15px 40px;
+        font-size: 18px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #218838;
+    }
+    #msg {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
 
 <h3>Enter Verification Code</h3>
 
-<input id="code" placeholder="Enter Code"><br><br>
+<input id="code" type="text" placeholder="Enter Code"><br>
 <button onclick="check()">Verify</button>
 
 <p id="msg"></p>
 
 <script>
 function check(){
- if(document.getElementById("code").value=="ABC123"){
-   document.getElementById("msg").innerHTML="✅ Verification Successful!";
- } else {
-   document.getElementById("msg").innerHTML="❌ Invalid Code";
- }
+    const codeInput = document.getElementById("code").value.trim().toUpperCase();
+    
+    if(codeInput === ""){
+        document.getElementById("msg").innerHTML = "⚠ Please enter the code!";
+        document.getElementById("msg").style.color = "orange";
+        return;
+    }
+
+    if(codeInput === "x7msjr1ial666"){  // এখানে আপনার কোড বসান
+        document.getElementById("msg").innerHTML = "✅ Verification Successful!";
+        document.getElementById("msg").style.color = "green";
+        setTimeout(() => {
+            window.location.href = "success.html"; // এখানে রিডিরেক্ট পেইজ দিন
+        }, 2000);
+    } else {
+        document.getElementById("msg").innerHTML = "❌ Invalid Code";
+        document.getElementById("msg").style.color = "red";
+    }
 }
 </script>
 
